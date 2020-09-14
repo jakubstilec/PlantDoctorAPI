@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>f2d9cd60-a6a9-4c6a-b3d8-f654fed13078</UserSecretsId>
+    <Platforms>x64</Platforms>    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\model.onnx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\model.onnx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="1.5.2" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.4.0" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime.Managed" Version="1.4.0" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime.MKLML" Version="1.4.0" />
+    <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="1.5.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+</Project>
