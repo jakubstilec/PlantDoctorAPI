@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace PlantDoctorServer
 {
-    public class Startup
+    public xclass Startup
     {
         public Startup(IConfiguration configuration)
         {
