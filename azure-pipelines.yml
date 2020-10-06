@@ -10,7 +10,8 @@ pr:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  #vmImage: 'ubuntu-latest'
+  name: 'Custom'
 
 variables:
   buildConfiguration: 'Release'
